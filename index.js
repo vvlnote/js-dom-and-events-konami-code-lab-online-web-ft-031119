@@ -5,6 +5,7 @@ function init() {
   let index = 0;
   document.body.addEventListener('keydown', function(event) {
     const key = parseInt(event.detail || e.which);
+    console.log(key);
     if (key === code[index]) {
       if (index === code.length - 1) {
         alert("Congration! you complete this game!");
@@ -15,3 +16,5 @@ function init() {
     }
   })
 }
+
+init();
